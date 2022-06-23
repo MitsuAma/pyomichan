@@ -11,7 +11,7 @@ with open('ReplaceTag.dic', 'r', encoding='utf-8') as f1:
         SS = SS.replace('-', '－')
         SS = SS.replace('!', '！')
         SS = SS.replace('?', '？')
-        SSLine = re.sub(r"N\t(.+)\t\(SoundW", 'N\t'+SS+'\t(SoundW', line)
+        SSLine = re.sub(r"N\t(.+)\t\(Sound", 'N\t'+SS+'\t(SoundW', line)
 
         SSList.append(SSLine)
 
