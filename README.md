@@ -1,5 +1,5 @@
 # pyomichan/ReplaceTagChanger
-半角小文字で生成されているReplaceTag.dic中の探索文字列を棒読みちゃん側の正規表現に置き換えるプログラムです
+棒読みちゃんのReplaceTag.dic中の探索文字列を棒読みちゃん側の正規表現に置き換えるプログラムです
 gitもpythonもロクにできないので粗は見逃してください
 ## 使用方法
 [実行ファイル](https://github.com/MitsuAma/pyomichan/blob/master/dist/ReplaceTagChanger.exe)をDLしてReplaceTag.dicと同じ階層に置いて実行します
