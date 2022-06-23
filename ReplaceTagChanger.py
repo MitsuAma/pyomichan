@@ -3,7 +3,7 @@ import re
 SSList = []
 with open('ReplaceTag.dic', 'r', encoding='utf-8') as f1:
     for line in f1:
-        spr = r"N\t(.+?)\t\(SoundW"
+        spr = r"N\t(.+?)\t\(Sound"
         # 単語の抜き出し
         ss = re.findall(spr, line)
         ssStr = "".join(ss)
@@ -11,7 +11,7 @@ with open('ReplaceTag.dic', 'r', encoding='utf-8') as f1:
         SS = SS.replace('-', '－')
         SS = SS.replace('!', '！')
         SS = SS.replace('?', '？')
-        SSLine = re.sub(r"N\t(.+)\t\(Sound", 'N\t'+SS+'\t(SoundW', line)
+        SSLine = re.sub(r"N\t(.+)\t\(Sound", 'N\t'+SS+'\t(Sound', line)
 
         SSList.append(SSLine)
 
